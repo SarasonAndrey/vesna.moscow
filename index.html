@@ -8,13 +8,14 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh; /* Важно для минимальной высоты */
             display: flex;
             justify-content: center;
-            align-items: flex-start; /* Важно */
-            min-height: 100vh; /* Важно */
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
+            align-items: flex-start; /* Важно для вертикального выравнивания */
+            padding: 20px; /* Отступ от краёв экрана */
         }
         .container {
             background-color: white;
@@ -109,8 +110,8 @@
                 <span class="icon">📶</span> ПОДКЛЮЧЕНИЕ К WI-FI
             </div>
             <div class="section-description">
-                сеть: <strong>Salon</strong><br>
-                пароль: <strong>brtaVMN34</strong>
+                сеть: <strong>TheNails</strong><br>
+                пароль: <strong>Nails2019</strong>
             </div>
             <button class="wifi" onclick="copyPassword()">СКОПИРОВАТЬ ПАРОЛЬ</button>
         </div>
@@ -154,14 +155,15 @@
 
     <script>
         function copyPassword() {
-            navigator.clipboard.writeText('brtaVMN34').then(() => {
+            navigator.clipboard.writeText('Nails2019').then(() => {
                 alert('Пароль скопирован!');
             }).catch(err => {
-                alert('Не удалось скопировать пароль. Скопируйте вручную: brtaVMN34');
+                alert('Не удалось скопировать пароль. Скопируйте вручную: Nails2019');
             });
         }
     </script>
 
 </body>
 </html>
+
 
